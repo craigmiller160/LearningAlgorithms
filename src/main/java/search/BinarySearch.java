@@ -1,4 +1,4 @@
-package search.linear;
+package search;
 
 /**
  * Binary Search is one of the fasted algorithms for searching data.

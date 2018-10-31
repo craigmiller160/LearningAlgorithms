@@ -1,15 +1,16 @@
-package search.linear;
+package search;
 
 import org.junit.Assert;
 import org.junit.Test;
+import search.RecursiveBinarySearch;
 
-public class BinarySearchTest {
+public class RecursiveBinarySearchTest {
 
     @Test
     public void testFindValue() {
         String[] array = createArray();
 
-        int result = BinarySearch.binarySearch(array, "36");
+        int result = RecursiveBinarySearch.recursiveBinarySearch(array, 0, "36");
         Assert.assertEquals(36, result);
     }
 
@@ -25,7 +26,7 @@ public class BinarySearchTest {
     public void testValueNotFound() {
         String[] array = createArray();
 
-        int result = BinarySearch.binarySearch(array, "abc");
+        int result = RecursiveBinarySearch.recursiveBinarySearch(array, 0, "abc");
         Assert.assertEquals(-1, result);
     }
 

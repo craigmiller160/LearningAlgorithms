@@ -1,4 +1,4 @@
-package search.linear;
+package search;
 
 /**
  * Procedure: Linear-Search (a,x)

@@ -1,4 +1,4 @@
-package search.linear;
+package search;
 
 /**
  * Procedure: Recursive Linear Search (A,i,x)

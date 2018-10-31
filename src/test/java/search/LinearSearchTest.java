@@ -1,7 +1,8 @@
-package search.linear;
+package search;
 
 import org.junit.Assert;
 import org.junit.Test;
+import search.LinearSearch;
 
 public class LinearSearchTest {
 
