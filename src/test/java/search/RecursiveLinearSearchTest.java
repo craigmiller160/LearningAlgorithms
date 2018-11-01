@@ -2,7 +2,6 @@ package search;
 
 import org.junit.Assert;
 import org.junit.Test;
-import search.RecursiveLinearSearch;
 
 public class RecursiveLinearSearchTest {
 
