@@ -7,19 +7,12 @@ public class InsertionSortTest {
 
     @Test
     public void testInsertionSort() {
-        String[] array = SortTestUtils.createArray();
-        String[] resultArray = InsertionSort.insertionSort(array);
+        Integer[] array = {17, 4, 86, 43, 32, 68, 54, 73};
+        Integer[] sortedArray = {4, 17, 32, 43, 54, 68, 73, 86};
+        Integer[] resultArray = InsertionSort.insertionSort(array);
         Assert.assertNotNull(resultArray);
         Assert.assertEquals(array.length, resultArray.length);
-
-        String previous = null;
-        for (int i = 0; i < array.length; i++) {
-            String elem = resultArray[i];
-            if (previous != null) {
-                Assert.assertTrue("Array element is not larger than the previous element. Index: " + i + " Previous: " + previous + " Elem: " + elem, elem.compareTo(previous) >= 0);
-            }
-            previous = elem;
-        }
+        Assert.assertEquals(sortedArray, resultArray);
     }
 
 }
