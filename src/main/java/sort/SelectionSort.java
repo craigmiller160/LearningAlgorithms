@@ -21,24 +21,20 @@ package sort;
 public class SelectionSort {
 
     public static <T extends Comparable<T>> T[] selectionSort(T[] array) {
-        int start = 0;
-        while (start < array.length) {
+        for (int start = 0; start < array.length; start++) {
             T startValue = array[start];
             int minimumIndex = start;
             T minimumValue = startValue;
-
-            for (int i = start; i < array.length; i++) {
-                T value = array[i];
+            for (int position = start; position < array.length; position++) {
+                T value = array[position];
                 if (value.compareTo(minimumValue) < 0) {
-                    minimumIndex = i;
+                    minimumIndex = position;
                     minimumValue = value;
                 }
             }
 
             array[start] = minimumValue;
             array[minimumIndex] = startValue;
-
-            start++;
         }
 
         return array;
