@@ -17,6 +17,8 @@ package sort;
  *      c) Swap A[i] with A[minimum].
  * 2) Repeat until we've been through every position in the array.
  *
+ * Complexity: O(n^2)
+ *
  */
 public class SelectionSort {
 

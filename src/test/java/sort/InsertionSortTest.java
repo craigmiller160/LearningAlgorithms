@@ -3,12 +3,12 @@ package sort;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class SelectionSortTest {
+public class InsertionSortTest {
 
     @Test
-    public void testSelectionSort() {
+    public void testInsertionSort() {
         String[] array = SortTestUtils.createArray();
-        String[] resultArray = SelectionSort.selectionSort(array);
+        String[] resultArray = InsertionSort.insertionSort(array);
         Assert.assertNotNull(resultArray);
         Assert.assertEquals(array.length, resultArray.length);
 
